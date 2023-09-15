@@ -27,10 +27,10 @@
   		for(j = 1; j < arr.length; j++) { 
   		//for(j = 1; j < 10; j++){
   		   int temp = arr[j];
-  		   int prev = j - 1;								// j가 1일 때 prev 0
-  		   while((prev >= 0) && (arr[prev] > temp)) {		// prev자리 값이 temp 보다 크고 prev가 음수가 아닐 경우
-  		      arr[prev+1] = arr[prev];						// prev자리 값을 prev+1 자리에 대입
-  		      prev--;										// prev이전 자리 값으로 변경 후 루프.
+  		   int prev = j - 1;				// j가 1일 때 prev 0
+  		   while((prev >= 0) && (arr[prev] > temp)) {	// prev자리 값이 temp 보다 크고 prev가 음수가 아닐 경우
+  		      arr[prev+1] = arr[prev];			// prev자리 값을 prev+1 자리에 대입
+  		      prev--;					// prev이전 자리 값으로 변경 후 루프.
   		   }
   		   arr[prev + 1] = temp;
   		}
